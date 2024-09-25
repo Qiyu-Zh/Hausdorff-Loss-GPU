@@ -1,7 +1,5 @@
 # Hausdorff-Loss-GPU
-'''
-!pip install git+https://github.com/Qiyu-Zh/Hausdorff-Loss-GPU.git
-'''
+
 In this package, you can calculate hausdorff distance loss in GPU easily.
 Exampe:
 ```
