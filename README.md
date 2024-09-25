@@ -20,7 +20,7 @@ res = loss(x, y)
 print(res)
 ```
 
-You can add parameter for alpha. If you do this, the function will choose the power for Hausdorff distance:
+You can add parameter for alpha. If you do this, the function will choose the power for Hausdorff distance.
 
 You can install it through:
 ```
