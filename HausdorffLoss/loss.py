@@ -34,7 +34,7 @@ class HD_loss(nn.Module):
         with torch.no_grad():
             target = target.squeeze(1) 
             if pred.shape[1] == 1: 
-                pred_dt = self.distance_field(pred_dt > 0.5)
+                pred_dt = self.distance_field(pred > 0.5)
             elif len(pred.shape) == 5:
                 target = torch.nn.functional.one_hot(target.long(), pred.shape[1]).permute(0, 4, 1, 2, 3)[:,1:]    
                 pred_dt = self.distance_field(torch.nn.functional.one_hot(torch.argmax(pred, dim=1).long(), pred.shape[1]).permute(0, 4, 1, 2, 3)[:,1:].to(dtype=torch.bool))
