@@ -35,5 +35,5 @@ You can add parameter for alpha. If you do this, the function will choose the po
 
 You can install it through:
 ```
-!pip install git+https://github.com/Qiyu-Zh/Hausdorff-Loss-GPU.git
+pip install git+https://github.com/Qiyu-Zh/Hausdorff-Loss-GPU.git
 ```
