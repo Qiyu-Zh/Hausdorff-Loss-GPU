@@ -32,7 +32,7 @@ res = loss(x, y)
 print(res)
 ```
 You can add parameter for alpha. If you do this, the function will choose the power for Hausdorff distance.
-
+You can substitude HD_loss with HD_ce_loss, which is based on distance weighted cross entropy loss.
 You can install it through:
 ```
 pip install git+https://github.com/Qiyu-Zh/Hausdorff-Loss-GPU.git
